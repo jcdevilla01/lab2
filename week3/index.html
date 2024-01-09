@@ -1,57 +1,102 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Jacob Angelo De Villa</title>
-<style> body{
-			text-align:center	
-			;}
-				
-		h1 {background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYZGRgaHBweHRwaHCUeHB4eIRkaGhocHCEeIS4lHB4rHxoaJjgmLS8xNTU1HCQ7QDszPy40NTEBDAwMEA8QGhISHzQrISE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0ND80NDQ0ND80NP/AABEIALcBEwMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAADBAACBQEG/8QARhAAAQIDBAYGCAMHAwQDAQAAAQIRAAMhBBIxQVFhcYGRoQUiscHR8BMyQlJiktLhFHKiFVNUgrLC8SMz4jRDk8MGc/IW/8QAGAEBAQEBAQAAAAAAAAAAAAAAAQACAwT/xAAeEQEBAQEBAQEBAAMAAAAAAAAAAREhEgJhgTFBUf/aAAwDAQACEQMRAD8A8YJayC0s7/vAAQ7EMdDeMFupQXC1JOpb9iDBxakKqq4SMSUF+KSmPJj26EuSHDDHzh3tAbXZ7tWo3kdsaBmA4AkZPlsJdQ4wFdtZwQovqpzrFNVxm2YXizEdm+H1ICEuuhegfrNlQVEAlFyThs6vMZ+EFdOSgNLgv+lQhsEdswWtgUONJpSLT5IBIugk6D2lqQMMfbT+rvJgoQktRFPh+0WLS6LMC1G2mKeiSDiAX94tqqIaUAmpSivw/wDGKCYHDJlsfhD8090XU4mzO2BJ+I8Yi+jiGIUkvRn+8PIUkpBuy9hCX/oEDmIqHRKG7wg2nhT9nrGT6w/jHEWFZPqnaS390OrYewgDSLw73ii06Ln6j2nvh0YWVYV06t7eYIejCT1hd1V5l4YCCoZYfE3bAZstw91J13VEczBtKHoxkn2Tpdt0DTYSQ15L6L58YEgJLulOvqP3tDiUJDdROo+jIJ4Kh6gz0asA0x+IwK0dErSxCVniYbABYFDfMH4L7ouGw642rbg6otoyMpVhUKlCw+l4ouzkEdRbbVRvpmJTmsaP9Rh3xZNqfrFahtWD2oi9VZHmJzg+oRtJ/wAwNM9ixDPrU/bHqlWkHFZOiqT2yqwsu0JHtN/IinBEMoxhoqQ5Wx2sTqhpdgWr1LxGsV5w3+J+Mv8AyD/10iLtXxnX/qAdiA/GLq4UVYSljnn1ac8IVtKCk4pI1GG5plnEXtq3HJcSUsAlpaAPyFXFyYUTlS3qxEXVKGvhDirbM9lkj4UN/YYr+MmHFZ4H6KxdXCapehzA1o/xD3p1++quoh+CYBMWs+0r9Q7ExRcKqRqO8GK3RqEGvrGZ/V3piFZzL/mY9rQsg+hGnmIkd6vup4D6o5EMjXM5LF1cExRE0D2+VOx4RCFaEv8AmP0xZMmYfZf+Y+EGNaamzBgF/pp2QNK0sxW24+EUVZ5gDlA+aOhCwPUTvXFi128P3n6SO0RdKxmsvqeBplrIvCWABib1OJi6QprxlhtN+JDylj3+L9waDpWnALTwPDB4QEwnBGHxQdCl/u31FVO2CwynUrQ5db0oK9jRLqW/3G2pMB9DOJf8NT81DzgkuVM/cDctI7VQEZCrrNNIGVC2x2iLVVvSHcG4tHRZJrv+HV86O29FJsmYKqsx/wDIn6oCsoqP/cppIPhHUSyx654q8DFEqV/Cn5w39UGRKmHCzK+dHfFRBpcsYiax2GLrsb+sscC3MRxFlnHGzK/8iPCC/hpzN+GV86IzrRH8Cke2ncDA5kkM17gT2GHDZpr/APTn50Qb8LMx9BwWjuXFqxkegIqADrJHjFDK927r6wG13NY2TZJv7ley+j6jFFdFTiHFnmEfnQ3ZD6WMpUtZp1GH5TF3Wk0Ug0yCcNpqIZmdGTRjZl/OiIjo+Z/DzPnT9Yi0YSWtRS15zQ0Ab7wFMlRrePnRWNY9GT2b8NMb8w+uF/2XP/hl/Mn6o1KMZs2SoVvU3d8BRJUp6p3iNRfRk3OzL+ZP1QNfRk3+GX8w+qGUWMxKVZ3d4HhFhIzoeAhw9Fzv4dQ2kd6or+zrQD/snin6odGFFpOrl3RwAtVm2w0uwTxjKbaofVAl2Wa1UJ+YeMKAVTJPGO3tQiqkLHsDj94GqWvQn5hFg1ZZ2CKHbFVS16E/MDFTLXoHH7QyC13f54RIGytA4/aJDg38b9/Vh50Re+Tq3gdsKzQoe0nl2CKomfEPO6OWOunEqJ0NpJp2xRckHXsLdggCV/Fy+0aNlspWKl9WPZBeL/JNSGNHG4Oe+ByZDi8Aa4EkAEYUJJ4ReegBZAQxFKiv2EElKADlQBGHV72iTiLNdJJxOukHkOCCx1VGA2GDSJAWaLIOij7gUjOGZlkuVvhWgMmsFrUjkoKUp3U2wNwjRs8hYBN4irMxLjhzjJROIIT6MEcgW1E6dEbFit6R1Sheq6DqLZRmtSHpJNM9YBPGmMUtchZoHbUPF4FZ5rqoheNesXdz8XmkOotJektZ1BmFNLxg4U/CrIzamWDbIuixqxZT6wz69PEw8hRVghSTodn7dMPoQt/U29Z2/TFqY5sqmxPEDa0cVZmxUp8MYfWpQe8pOrrmvBm4QtOX8YA1XixfbppAgfwtaKJ2KfviJnsoIUS5FEk/bvhtCnDFaWHwF+edYWVLStYW4UpNAbuWsAxJZArdJbQ2jcMIZQgZKwp7QEDTOAxXrYBb9scmzkv6xI1JUP7oUi5adOGgq7oEi5Uunf8AcGOLKFEm/QDBiRlxhebcGCi/wo06aRRY00pJTp1O7coXLDGp5jjhCSbUAQGUdya8oAqYCSXWDouo4RYjs2ZdIH34wEzVGnkxmzpoZwlZDGvLDKEhPF5glRPPsjcjOtK0LVpr+akJKCndzxgSryywQsNmaU0OYGUG9nTIEH7wp2fKVpPGE1yTr87YYWpYwFNggcxROPhELCE2Q0AMts40/QPiYz7cFD1MMHEb+azQKaYtdTHUIUQ554tHCBoMaAfoxqiRy6fLxIWWuqygewkjYfGDSbOCH9Gg6XBA2jrh47/PozJ7E1iktbKdy35Qe1o566CegQer6FJOV1ZHIEwWVZADQLQrL2hwICjEFqBo77XbeBB02lQzB1JIA25GCpxHRxmEX2vJqVJAqlsFB3HPvhO2hfpAlIYDVjyr4Q2ifrIrWmMHnWgENeUdgAJ1RajCAhID+u2VWJxGLGm1orIQkq6yVrJqCpSmfQyUp7WgUhaU0SCMK1HjSDS7SHoXyOnd92jLUPSFhiVSEk/kUeJK3wgCLQiry2bG7fSGwYByN0VmTkkuLpwfrHixJgsqbea6nAjDq4bA5jJPWO57KlBn9p24oEaEggYTSwr1ig9qxCCFlQLBicz1q6380jssKxUA1C10eMZpa9ncVCk/KjuXBVWtY9hBroGG5Y4RmX0sC2jFI7zBJdcaZ+qmvPBokaUhKj6iARg3/wCoFMSCf9pBO3xMEEklNAH2JHfAVSWdyG2Duxg1DokIAH+gk/M9dF0EQCbZ5eFxaDizhtvWA0mOykpDBiT+UAPtBi19SSR1hsveMGpX0ctqKW50FGeomF12dBqpS/mQOw4wytawMVbyfJ4QCZNKgaqppUW3uIdS5kygHdZB0rQ3JcCXZ7Oa3FDCoWgHH8wgC5qyB1iR+Y4NQUDQSUVFiSpjSilY6+rWFKKslncgGaN6GGx1RnWjo5IUbs1Sn9lSVPQ4ugEQ9OCmoV7LxH9sZ65ZvOQDlW6f6kUhlSn4ShImJOlkLx1sGeFpVjIJLpSa5LbjcYQ0uWRQAYuxKSSdQI5aoGsLAoAdTI0eRGoEEt6vLVsWAf1NFk3M0F9SkqH9UKoQXqR+lu2C7VFsqf8AKEaOr0ahdN9J1IfsjNnWAA0WD+ZKknshhcsHTwPjC65Gbp/mvfeGLV7qAOsG1gjleaMu0dHpHqrUB8QpxSWhtTpFS35SB3OYXNoq3M0O3TzL6IYzSXoSksvDSMNtI5LkIIe8almq53QC2Ww3mHnOGpCgEXlYn7eAjXQoZSfdVwHjEgXpNX6R4RIuri4tSxW4p9SW7In4tRxSo7XwhsLTmo+d8dFz7+TFv4sJybWfZBpqJgptKiXul9N0w0mWjNj5yh6z3HpTfljBfoyMyXPIxSv5TDMucPcmH+T7xr2dCSQ6+3RVte6NRElBHritcIzfqGfLzy55UGCFjag9zwGXLKSSUGmlJ7xHrESQXdaSeHbEEoE4j5oz6OPPyZqjX0SzoKU78+6HZSykP6OZsukd0bEiWBme2D3VByCGwYU0uzxm/Rxlyp6jhKXTAXab2UGiy7Qc0TAWrQjhXvjQXMUEklQPazaqxSWgqrf15jHDRhrg04WlFRIaVMVtHb14eRLWKGSsbKnkSIkqWxBcqOdFDmDSGFLY56nc9zQWrFZa1of/AEVmnunuga5yy5MhZ3Ed8FUvMAOcsuLUi6A6cDu05wbDgKVzMrPMTup/WTB5d4msqbu0trg5KkjAsNT7R2xJNpdmLbAO8wasKoSt13pC7pw6tcs70DQhYp6CZoam3NcaUwZjiW8Y4heRu+d7vWLfxYzZkpZP+zMB1gHvMCElZwkzKaEpHaRGvMXiWBbSBAJa65GuFDFqxlzUTBT0E0bQjmy4WKJucpfJ2+aNqdMfFIp8Kac/LQulqim4J8Y1PpYw5tpWHHopm5IJhNU9X7mbvSO8xuLQSaZ6xA1yT5YRqfQsYf4sjGTMG1KfqgJ6RaolqO0Bt9Y212UtUj5m5Ywquyjys9wjXoYyV9K5eiVuAPaRCk/pHRLWNefb3xpTbINI2Xz4QpMso1fPGpYzYzV21fuL3gP2woueov1Fed8aS7ONCfmgC5A0J+aNT6jN+ayrqiXKFx2fOWrFJAGAyjRUjUPmgMyXq/VG/Q81nXj7p5RIauaucdjWxnyKmdqSPO2ComqLMEPohNNnIOuLpRdLlw0Zsh61EqXSg4/d4L6RTHqjLT4wrIQVmmLYl98a9n6IWAKjDjHO43AytV1ygbQ/i0NSyFAMCdY8NMN2WQAGZZJybyIbs/RoU1Wy1tGLWoXlWY3Sq8pOFC9S2yOqs5cgL4uzbN/KN6VYyaFbgBtOzupBT0eCzpNDo1NujGtPMqkzQsgO2bhycnBB7oYkIWcAS9HA79HCN9PRpLh0tlWgjqOhh6t8AZVq7YxamKiwLLH1c6BxTW9KtDKehig3qg4mgqRoZ43EWQJYCZhiAX46YcvDC8CaY74FrETZlBINdu/E0pFVSltgVaQEqHaI2lWhAYFQ0MPOmKmfLfS4PjBi9PPXFFz1fmFNta0istMw+qBic6cY3ZapaSbqOGYfjojiygkukamo+dcHixemYEzNBOqJcmVYA7XfeThGqooL9UZNg+FHqxAeCyp6MGAzyFdx3QYvTKC1gtR2wfy8XQFsSXxPJvHCNdU5AyHnbA12pJoySPOnPCKQ+mQtSwaOXH+NEDSqYXDbuMaC5wKgoACtah2fDCOptDMaHMnF8+yLFrKKJmYV57MDC6ytqBxR64CNdc9asEhxmwzOT6u+Kma9LqXc79dBjDmLWQkqBAo+7XrrgY6q/iwbTSNVRQzG6HGDOG1coStU96JWBrGfdDAzp94bdQhQJUcVDRl4RqzJ3VZSn+XjGdaFH3xjk3hGpFpOdJWahiNghRctegcBGqhdCylHd9oWmyn0vtjUFZEySvEgcIAqWrVwEbZkHSYWnIAyjTLGXLV5Ahdb+RGhNFTSFJu1o1BSl46OUciXfiPCJHRkdNofRu+7w/OlhSHQk3gMNekec48+hOo8D4Q5ImrHq39wPhFflifVbv8A8cmFLiYKNRxU5+EPr6Rcm6hI0FZbzzjzqVTMbqzsSruTBEqWMUrH8ivCOd+XSV6aRaFnBSH1IJGx2jRs85eaxsSgv2R4sWgvVK/lV3iGx0mTkr5OWEZvy1r2otY/eLFMAM21iOKtQuk3l6BXDXiXOOqPKI6UalxbHMJPcIcR0o1AJgGYun7Rnydens0xJDdc7ajRhe86YdQhFCULURrHMBVY85J6dKQOpOOxBin/APQKUpxLnbClQHOM+Tr1iEJAf0WOrmMdUFkCWC1wZM44eyTHnJPS01TPLXlk27GOr6dAVcKFXzg5BO1nrBierCkV6nbt92sRkgPcYYln+mMBXSC0AEyl1zvpL6TV45+3iQB6OZTSU11RLHoCsO5RXYdGsRBbE5hhv1tS7GF+2CqnoZh3xVNqWB/008k5hQHCndBtXlvqtKK1GNcNDZjUIGqeheJpupwLxgmdM/hp43g90UVaJmBkzR/Knxg6fMeg9FKOQfZ4GKGyyhQu9Mj4R55dsWnCzTjsSnxiwt0w4WadvSBF05+vRykyRgORxGvCLGXKUKDuyOuPLrtkz+Hmcu4R1Fvm/wAPMG5JPbF/Bn69CqXJSKvXjwKoWXJs2g45bPzVjFVbJmcibwT4wCZbZgxkzdjgdhjX8WfratKZD58vqhacqSAwSdXW7cYxplvXnJm/MPGBKtUxVE2aaf5gewwyDWtLmoq6Dseh1+rSBrmSvdPP6YxVqnksLMp9FH/qhedaZ6cbOeI7lxryNbip0uvV7fohdVpRkniFF+UYK7fOzkHj/wA4WmWidlZ+LfVGp8i/T0q7WjG5yPeRCs+1J9wcP+cedE+e/wDs/wBPjFlTLTnJVwTGvA9Q/PtQLhhwT9UZs5b4j9PgYEqZOP8A2jwTAFTF/u+zxhnyPUWujy/hHYA6v3fZ4xIco2GJVvmD2zyhxPSMwiqn8iMhJ8+RBX3edkNjMrTFoJIOJ3+MRKjobc8IJBOHODIQXxHaPO+M40dlKBLNtcQ1LN0YgRmygBW8By/uhlK7ubcIzTD6FBw6kvt+0MIXk77DXfSMpBq7udQHhD0hdXYjdR94grUOItKMTj51QxJtt1rofNx5pGVOIfFhoy5CCWcpYC8a4AP3CM2FpTeklOAQwODd8M2aaAXpnkHhNEoZBfNuJoYHZlpWpaUPfS9PI1xmwxqm1E0PZ2OIiVgl2Da2w3wklCfaKAKh1EvhWjQdKg7JIYVo3fBYWmJiWe4ij66xaXb2fqobU5jOmg0LjTlXS1YiTnQPoPbXugxNk9Ii67fpNNtYoOly2A8OBjFmWkhxechqXk1cZkjB4HMJLYnNisHgHixcb8jpZRfqp3Hi7QwrpFTCgfUe3znHnZZW2N2tK9t0Uzjq7UoBwS2pJNfkdoMXG0rpRQOWOjd70LL6UXm3neXjPE0qS7Kydwok506kUZd4kBR113UutDiPq6RUQ7gceemA/jicCOPhGbOSt3vEP8J8OcDMtY6xfeCBvjUi1pTekVjVseFZlvXjf4QFS3DlVdDiFVhs34c84ZAMq1E4qLQlbbQbqm0RWZaFDQRtf/HGAKtQONNfbujUROzdIqZlVFdxhtE2mkZQBEhHrAHuGsPjA7+XbGqyKtYd3I3xVU4t65iqwPNYBMSw8aQBJsw+954wqtLe1WOqTsgSk6xHSCh3tZiRy6NUSNMGE2ZZNEwYWJZ9kbchASrZF74pU+dkHVweX0ap6jlTi3ZGlKs7tXiOVYyb4NB9oL6ZsG0UFOMZstalkai7IovRtDhJfN+thWDKsi3DXcMfCgjKk2hyXUnLEU30LxooV7xAOkXkjd1h37IzZTLA59nmIrdUw9ogkZ+7lti8mS6St7wZypqBqlgIfsk4il86WV1vBYxyBgi5CBeukJPuXuq5zZgQdRG6Asn0ilKqFAHBhzcEB4eRZFlIUhQONTR98KSVKSs3ycsMA2AjYlWpBuoSkq1M40mjp4l8XiqhCXaCHyIp1qh61xwpF7JamJJWi+xvPQed0bC510AXSphkgEbKqIhb094OAQNaEY6GxjDQaLUpT3bpA0UdWbVZjF0WlV8BSC2oXg+9OyDS7UEN624Ad9OEHFvGBU2u8G5JgaFEkKHVQNboCd9RWOCyLxCEmvugNyMCVbVJPr00ODv9Su4QVHSTAVL5spq6WCBBiDNlWCRcA0OgdrRWXYl4KugnBkpbs74InpN/WJIydQ0jIpjn4p/fP5rxBx91bHhChJPRtxHWQgk/AAG0lgTBv2QihUEJSBWjV864y7TcfrIRjmhXeawaxTkCo9GAMro+gwYh7RKlIqladQvkf3Rhr6QSAboWdPWcbesNNI3JVsr643J1/wD1U2Qf8dRit8MA3/qiieakWq8WKpmbAJdjlW73wC1WghISb7jIuTwbvj0S7SxJBVu+8uBLtqsStWolKO8JjUDzgmi61+4dN2vMw7Is4WHCit8ywAObARqL6UCgQtMtadaWP6bwjMQiWlZXLC0E4pLFG0AlJxjQZtsWnDAAswz2xlC1BSroDZYRu9IXSASzgMSHAONTewNcbxjBKAD1QnWQp418xm0yXZyttGBHc+yLWeQtVSANBwfZAkkioKX0sSeaS26OrtBJZSlEj41jkEtDg1acjACmVKvAritfAwPqHEfrV9MXSuWKMH1rV4Q4tcmSzpPD7wutxnxENL9G/q0/Or6YAqWjJI+Y+EMBe8dPnjEg11GgcTEjQwFK0a+P2jpmJ0nlAUBJHqjnHUoHup874sY2ipnJz7R4QQzwav2QBKQ3qh45cGju7osh6ZNs1jgBzFYui1j3kje3EwrdHujzugiJYPs9vhBkXWmi1I/eJGPqqHeQTF5fSKB6yweB24GEggN6vb/mJLQMWPPlGcjZyd0hLaihiTQV/qjtm6QlguVtsAhUyknANuJgkuzp0D5S/KLmHp2d0whyfTPSlBTRnHR0zLOMwbzWAmWn3TwV5EdKE+4Dxg4umpXSiCazwAMK/eG09ISc54J/M3Foy1AOwljXiABEMxqXEDXUkbicYzZK1rUnW+QXaaDvf+2AotssD10/q7kwvJnACqEl/hPZDibSgD/bQdw7DhBjS6rfII9ZILM5vHugf7RkvVfC9zZPZBEWxIxkoO4fVA51rGAlIYZXm7CYE5+05L1WrayvpiftKSMFF/5x3QKZPSCf9MaaGr/NERMBqQU6qeJhyAU9IyDUqJOR6/bdJpHR0nK9/iV/RC5KAoEVGdK8RD6bXLGCOLntwg4SkzpOSTVZ+dXemF19JyRQKUd790aEy1SyKoR8o7ozVWtAJZCeEajNVX0jKVitQ/l+kAR1HSksF/SE7R4mOJ6RSCWSG2eEXR0kj3RwEP8AAWtPS0pQYqSdoPdCyOkpIOKdwPeI0VW9BfqJ3pEDNoR7idyB3RqWf8FlLftKS/rJOq6fCATrdJJoRtYA9sOLtSPcHAQM2tHuJ+UQ8GUubfJOPbAza5Xn7wddsA9lPyiFzaR7qflhgxZNuljRxECXbUaQd8RVoT7ieEBXaE+4nzuhwa7+JT5MSFfSj3R53RIfI9Cpp/n7wRB1COS5ai0NIsajmd0FsElBu5uOH2iwV8XDCHF9Hj3huMcR0cALxPHHlB6jfmlgkU66oYlI+IkGkERYkU63nfFhcA6oB1HEjujNpkVEquJA0MTFk2fF3giCkJw8tF5a0nCmNTs+8GkBEpOJJ2GKAoBdzn5pBRIdRqMh5o0EFkBwIpkG8vEgE2lD4E+ecW/EIJdy2EVnWYA4VjhkkeswFcPAeEXFtFmoTQuaa/NIFMKGxxz84QVNkJzB4eEV/Cs7ByG84UiQtmWjQ+WgHZQw4Uy0s6dz8YQRYy9WD5Ow87YPcDtfwqz+RBYYL+Il4XSBpx5iKqKPdPZC9ptCkhwlxpx5CM78bexK6aDQbop8q1sqUnFqedMD/FoAo3OEkLSpnUeXjQwcy0CoFNKsOLxYtGTalqolNNLMPvAp6lVKlbhSH5KTdJBBGkdkZNpWpEwheGWLNFIdKWm2EFuUdkzQp2oRlHLTZ0qNI7Z5Vz2eMdOYz3USCTRcEShT+ty+8CRZS713QZMpXvne0CdF6vXO4GKG/wC/2xxcpXvHlFFyjpPCJV24s+0Ino1Zq4QA3tJ4RQzC2J87ocZ120kJzMcQm8HcxRanxrqMWE85AQ5wbNEEv4uUUXJOkRz0itAiq5hOQEU1XHfw50iJA+t5MSNZRw/Lko9855HTBkygTRahEiRitT/DqpaXACi70cPFjJS9Zh1BjEiRlqrGzpZr2w106Gixs4A6yt/+BHYkCcVZ0khlF8NvKAKsSqdaJEhZERIWAOtiKDvgSpkwUpEiRRVJlpWlr9djRFWpzg3l4kSH/SElW6m/zjrjv4q8cWroD8WiRIKoZT0mxINSACXHHAQQT0nLaRzxESJBWoMlYLdZQatcMMab4JNsAWirba9kdiRkkpn/AMaOS4X/AGZNT1goEYMc4kSNeqsjku2FBqlQPwkEcC3bDaOkpc3qmp0EEeI5iJEhyAhOsCHopSNX+Hiosa26qzviRItpwNVnmB+uOEQJmAgXhXVEiQsips8w1cAedEMo6PUrGZ2xyJGbSHO6IX7w7IAjow1cxIkMtWRb9mtj2xxPRqdHOOxItqyIejktAVdHjXxjsSGWrID+CGvlEiRIdrOR/9k=);
-			font-family: Courier New;
-			color: white;}
-			
-		div.main {
-				width: 800px;
-				margin-top: 20px;
-				margin-bottom: 5px
-				padding-top: 5px;
-				padding-bottom: 5px;
-				font-size: 30;
-				font-family: Impact, Fantasy;
+<head> 
+	<title>my profile</title>
+	<style>
+			body {
+				background-color: black;
 			}
-		div {
-			width: 650px;
-			margin: auto;
-			padding-top: 5px;
-			padding-bottom: 5px;
+			h3 {
+				font-family: Times New Roman;
 			}
-		body {
-			background-image: url(https://overworldmaps.com/games/octopath-traveler-2/map/optimized.jpg);
-			background-size:100% 100%
+			blockquote {
+				font-family: Courier New;
 			}
-
-		
-</style>
+			div.main {
+				width: 1000px;
+				margin: auto;
+				padding-top: 10px;
+				padding-bottom:15px;
+				background-color: white;
+			}
+			div {
+				width: 500px;
+				margin: auto;
+				padding-top: 10px;
+				padding-bottom: 15px;
+			}
+			.blue {
+				background-color: gray;
+			}
+			.yellow {
+				background-color: gray;
+			}
+			.gray {
+				background-color: gray;
+			}
+			#greetings {
+				color: black;
+				text-align: center;
+				padding: 10px;
+				width: 250px;
+				margin: auto;
+			}
+	</style>
 </head>
 <body>
 
-<h1>Welcome!!! <img src="C:\Users\Jacob\OneDrive\Pictures\Oct2path\ship.jpg" style="width:45px"> </h1>
-<br>
-<div class ="main">
-<p1>Hi! My Name is <strong>Jacob Angelo De Villa</strong>.</p1>
+<div class="main">
+<h1 id="Hello!">
 
-<br> 
-<p2>Kindly click on an icon below to get started in knowing me</p2>
+<h2 style="text-align:center; margin-bottom:2px;"> I am <strong style="color black;"><em>Jacob Angelo De Villa</em></strong><br></h2>
+ 
+<p style="text-align:center;"> 
+my birthday is on June 10, 2002. <br>
+which means i am currently <strong>21 years old.</strong> <br>
 <br>
-<img src="C:\Users\Jacob\OneDrive\Pictures\Oct2path\Osvald.png"style="width:70px","height:40px">
-<p3>Birth</p3>
-<img src="C:\Users\Jacob\OneDrive\Pictures\Oct2path\Osvald.png"style="width:70px","height:40px">
-<br>
-<img src="C:\Users\Jacob\OneDrive\Pictures\Oct2path\Castti.png"style="width:70px", "height:40px">
-<p4>Goals/Aspirations</p4>
-<img src="C:\Users\Jacob\OneDrive\Pictures\Oct2path\Castti.png"style="width:70px", "height:40px">
-<br>
+</p>
+
+<div class="gray">
+<h2 style="text-align:center; color:black;">   Background: </h2>
+<p style="text-align:center;"> 
+I've been an APC student since senior high at the start of the pandemic. This means that I have been in APC for 4 years. <br>
+and right now, I am a student studying for a degree in <strong>bachelor's degree in computer<br>
+science</strong> specializing in <em>cyber security and system forensics </em><br> 
+and since I have been in APC since senior high, meaning<br>
+I get a 20% discount on my tuition fee for loyalty.
+</p>
 </div>
-<audio src="C:\Users\Jacob\Videos\OCTOPATH TRAVELER II - _Main Theme_ by Yasunori Nishiki  TGS 2022.mp3" controls>
-</audio>
+
+<br>
+
+<div class="blue">
+<h2 style="text-align:center; color:black;">  why <strong>computer science</strong>? </h2>
+<p style="text-align:center;"> 
+I chose this course because I was <strong>advised</strong> by my mother <br>
+which I thought was the wrong decision at first since <em>I wanted to pursue psychology. </em><br>
+however, I <strong>do enjoy my current course</strong> <br>
+</p>
+</div>
+
+<br>
+
+<div class="yellow">
+<h2 style="text-align:center; color:black;">  <strong>hobbies and interests</strong> </h2>
+<p style="text-align:center;"> 
+my hobbies include <strong>reading, playing games, watching movies, and watching anime.</strong> <br>
+i also recently just <em>tried</em> <strong>ice skating</strong>, which I found to be surprisingly fun. <br>
+</p>
+</div>
+
+<br>
+
+<div class="blue">
+<p style="text-align:center;">“Talent is a universal gift, but it takes a lot of courage to use it. Don’t be afraid to be the best.”</p>
+</div>
+
+<br>
+
+</div>
+
 </body>
 </html>
