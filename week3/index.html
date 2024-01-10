@@ -6,18 +6,15 @@
 			body {
 				background-color: black;
 			}
-			h3 {
-				font-family: Times New Roman;
-			}
-			blockquote {
-				font-family: Courier New;
-			}
 			div.main {
 				width: 1000px;
 				margin: auto;
 				padding-top: 10px;
 				padding-bottom:15px;
-				background-color: white;
+				background-image: url("C:\Users\Jacob\lab2\week3\Images Used\Background.jpg");
+				background-repeat: no-repeat;
+				background-position: right top;
+				background-attachment: fixed;
 			}
 			div {
 				width: 500px;
@@ -34,12 +31,31 @@
 			.gray {
 				background-color: gray;
 			}
-			#greetings {
-				color: black;
-				text-align: center;
+			h2 {
+				color: brown;
+				text-align: right;
 				padding: 10px;
-				width: 250px;
+				width: 300px;
 				margin: auto;
+				font-family: 'ANDY';
+			}
+			@font-face {
+				font-family: 'ANDY';
+			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy Bold.ttf");
+			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy-Bold.eot");
+			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy-Bold.svg");
+			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy-Bold.woff");
+			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy-Bold.woff2");
+			font-weight: bold;
+			}
+			.treeraria {
+				position: relative;
+				height: 500px;
+				width: 20px;
+				left: 0px;
+				right:0px
+				top: 5px;
+				z-index: 1;
 			}
 	</style>
 </head>
@@ -48,7 +64,7 @@
 <div class="main">
 <h1 id="Hello!">
 
-<h2 style="text-align:center; margin-bottom:2px;"> I am <strong style="color black;"><em>Jacob Angelo De Villa</em></strong><br></h2>
+<h2 style="text-align:right; margin-bottom:2px;"> I am <strong style="color black;"><em>Jacob Angelo De Villa</em></strong><br></h2>
  
 <p style="text-align:center;"> 
 my birthday is on June 10, 2002. <br>
@@ -66,7 +82,9 @@ and since I have been in APC since senior high, meaning<br>
 I get a 20% discount on my tuition fee for loyalty.
 </p>
 </div>
-
+<div class="treeraria">
+<img src="C:\Users\Jacob\lab2\week3\Images Used\treeraria.png">
+</div>
 <br>
 
 <div class="blue">
@@ -97,6 +115,5 @@ i also recently just <em>tried</em> <strong>ice skating</strong>, which I found 
 <br>
 
 </div>
-
 </body>
 </html>
