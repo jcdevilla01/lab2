@@ -74,6 +74,9 @@
 		const msPerDay = 24 * 60 * 60 * 1000; 
 		let daysLeft = (newbday.getTime() - today.getTime()) / msPerDay;
 		daysLeft = Math.round(daysLeft);
+		if (today == newbday) {
+			celebration = "HAPPY BIRTHDAY!!!!"
+		}
 	</script>
 <p style="text-align:center;"> 
 my birthday is on June 10, 2002. <br>
