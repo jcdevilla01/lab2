@@ -1,131 +1,141 @@
 <!DOCTYPE html>
-<html>
-<head> 
-	<title>my profile</title>
-	<style>
-			body {
-				background-color: black;
-			}
-			div.main {
-				width: 1000px;
-				margin: auto;
-				padding-top: 10px;
-				padding-bottom:15px;
-				background-color: white;
-			}
-		
-			div {
-				width: 500px;
-				margin: auto;
-				padding-top: 10px;
-				padding-bottom: 15px;
-			}
-			.blue {
-				background-color: gray;
-			}
-			.yellow {
-				background-color: gray;
-			}
-			.gray {
-				background-color: gray;
-			}
-			h2 {
-				color: brown;
-				text-align: right;
-				padding: 10px;
-				width: 300px;
-				margin: auto;
-				font-family: 'ANDY';
-			}
-			@font-face {
-				font-family: 'ANDY';
-			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy Bold.ttf");
-			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy-Bold.eot");
-			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy-Bold.svg");
-			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy-Bold.woff");
-			src: url("C:\Users\Jacob\lab2\week3\Andy Bold\Andy-Bold.woff2");
-			font-weight: bold;
-			}
-			.treeraria {
-				position: relative;
-				height: 500px;
-				width: 20px;
-				left: 0px;
-				right:0px
-				top: 5px;
-				z-index: 1;
-			}
-	</style>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Angelo De Villa - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        p {
+            color: #777;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 	<script>
-		function
-	</script>
+        function startCountdown() {
+            const targetBirthday = new Date('2024-06-10T00:00:00');
+
+            function updateCountdown() {
+                const now = new Date();
+                const timeDifference = targetBirthday - now;
+
+                if (timeDifference > 0) {
+                    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                    document.getElementById('countdown').innerHTML =
+                        `${days}d ${hours}h ${minutes}m ${seconds}s until my birthday!`;
+                } else {
+                    document.getElementById('countdown').innerHTML = 'Happy Birthday!';
+                }
+            }
+
+            setInterval(updateCountdown, 1000);
+
+            updateCountdown();
+        }
+    </script>
 </head>
+
 <body>
 
-<div class="main">
-<h1 id="Hello!">
+    <header>
+        <h1>Jacob Angelo De Villa</h1>
+        <p>Computer Science Student | Cyber Security</p>
+    </header>
 
-<h2 style="text-align:right; margin-bottom:2px;"> I am <strong style="color black;"><em>Jacob Angelo De Villa</em></strong><br></h2>
- <script>
-		const today = new Date();
-		const mybirthday = new Date(["2002-06-10"]);
-		const newbday = new Date (2024, 06, 09, 23, 59, 59, 999);
-		newbday.setFullYear(today.getFullYear());
-		const msPerDay = 24 * 60 * 60 * 1000; 
-		let daysLeft = (newbday.getTime() - today.getTime()) / msPerDay;
-		daysLeft = Math.round(daysLeft);
-		if (today == newbday) {
-			celebration = "HAPPY BIRTHDAY!!!!"
-		}
-	</script>
-<p style="text-align:center;"> 
-my birthday is on June 10, 2002. <br>
-which means i am currently <strong>21 years old.</strong> <br>
-<br>
-</p>
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Welcome to my portfolio! I've been an APC student since senior high at the start of the pandemic. This means that I have been in APC for 4 years.
+            and right now, I am a student studying for a degree in bachelor's computer science under cyber security and system forensics. My birthday is on June 10 2002.
+        </p>
+		<button onclick="startCountdown()">My Birthday Countdown</button>
+		<p id="countdown"></p>
+    </section>
 
-<div class="gray">
-<h2 style="text-align:center; color:black;">   Background: </h2>
-<p style="text-align:center;"> 
-I've been an APC student since senior high at the start of the pandemic. This means that I have been in APC for 4 years. <br>
-and right now, I am a student studying for a degree in <strong>bachelor's degree in computer<br>
-science</strong> specializing in <em>cyber security and system forensics </em><br> 
-and since I have been in APC since senior high, meaning<br>
-I get a 20% discount on my tuition fee for loyalty.
-</p>
-</div>
-<div class="treeraria">
-<img src="C:\Users\Jacob\lab2\week3\Images Used\treeraria.png">
-</div>
-<br>
+    <section>
+        <h2>Fun Facts</h2>
+        <ul>
+            <li> I have a total of 11 cats at home </li>
+            <li>I've watched over 500 anime </li>
+            <li>I love trying out new things </li>
+        </ul>
+    </section>
 
-<div class="blue">
-<h2 style="text-align:center; color:black;">  why <strong>computer science</strong>? </h2>
-<p style="text-align:center;"> 
-I chose this course because I was <strong>advised</strong> by my mother <br>
-which I thought was the wrong decision at first since <em>I wanted to pursue psychology. </em><br>
-however, I <strong>do enjoy my current course</strong> <br>
-</p>
-</div>
+    <section>
+        <h2>Contacts</h2>
+        <p>Feel free to reach out to me. Let's connect!</p>
+        <ul>
+            <li>Email: <a href="mailto:jacobdevilla@gmail.com">jacobdevilla@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/jacob-de-villa-193a801b4/" target="_blank">LinkedIn</a></li>
+            <li>GitHub: <a href="https://github.com/jcdevilla01" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+	<script>
+        function showMessage() {
+            document.getElementById("message").innerText = "Hello! Thanks for visiting my profile.";
+        }
+    </script>
+    <footer>
+        &copy; 2024 Jacob Angelo De Villa - Profile
+    </footer>
+	
 
-<br>
-
-<div class="yellow">
-<h2 style="text-align:center; color:black;">  <strong>hobbies and interests</strong> </h2>
-<p style="text-align:center;"> 
-my hobbies include <strong>reading, playing games, watching movies, and watching anime.</strong> <br>
-i also recently just <em>tried</em> <strong>ice skating</strong>, which I found to be surprisingly fun. <br>
-</p>
-</div>
-
-<br>
-
-<div class="blue">
-<p style="text-align:center;">“Talent is a universal gift, but it takes a lot of courage to use it. Don’t be afraid to be the best.”</p>
-</div>
-
-<br>
-
-</div>
 </body>
+
 </html>
