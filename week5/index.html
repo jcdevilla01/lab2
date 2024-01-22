@@ -30,7 +30,7 @@
         }
 
         h1 {
-            color: #333;
+            color: #f1f1f1;
         }
 
         h2 {
@@ -105,20 +105,23 @@
 
             updateCountdown();
         }
-		function AboutMe() {
-				const Me = {
+		const Me = {
 					  firstName: "Jacob Angelo",
+					  middleName: "Corpuz",
 					  lastName: "De Villa",
 					  age: 21
-			document.getElementById("h1").innerHTML = me.firstName + " " + me.lastName
+					  };
+		function CallMyName() {
+			document.getElementById("nm").innerHTML = Me.firstName + " " + Me.middleName + " " + Me.lastName;
 		}
+
     </script>
 </head>
 
 <body>
 
     <header>
-        <h1>Jacob Angelo De Villa</h1>
+        <h1 id="nm">Jacob Angelo De Villa</h1>
         <p>Computer Science Student | Cyber Security</p>
 	<div class="main menu">
 	  <div>home</div>
@@ -126,6 +129,7 @@
 	  <div>profile</div>  
 	  <div>contact</div>
 	</div>
+	<button onclick="CallMyName()">Click Me For Full Name</button>
     </header>
 
 
