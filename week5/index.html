@@ -62,6 +62,23 @@
             background-color: #333;
             color: #fff;
         }
+		.main menu {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			background-color: #f4f4f4;
+			height: 100vh;
+			justify-content: center;
+		}
+		.main menu > div {
+			background-color: #f1f1f1;
+			margin: 10px;
+			line-height: 75px;
+			font-size: 30px;
+			display: inline-block;
+		}
+		
+}
     </style>
 	<script>
         function startCountdown() {
@@ -88,6 +105,7 @@
 
             updateCountdown();
         }
+		function 
     </script>
 </head>
 
@@ -96,7 +114,14 @@
     <header>
         <h1>Jacob Angelo De Villa</h1>
         <p>Computer Science Student | Cyber Security</p>
+	<div class="main menu">
+	  <div>home</div>
+	  <div>about me</div>
+	  <div>profile</div>  
+	  <div>contact</div>
+	</div>
     </header>
+
 
     <section>
         <h2>About Me</h2>
