@@ -122,9 +122,7 @@
 				this.Age = Age;
 			}
     </script>
-	<?php 
-	echo test 
-	?>
+	<
 </head>
 
 <body>
@@ -140,14 +138,16 @@
 	</div>
 	<button onclick="CallMyName()">Click Me For Full Name</button>
     </header>
-
+	
+<
 
     <section>
         <h2>About Me</h2>
         <p>
-            Welcome to my profile! I've been an APC student since senior high at the start of the pandemic. This means that I have been in APC for 4 years.
-            and right now, I am a student studying for a degree in bachelor's computer science under cyber security and system forensics. My birthday is on June 10 2002.
-        </p>
+            <?php echo "Welcome to my profile! I've been an APC student since senior high at the start of the pandemic. This means that I have been in APC for 4 years.
+            and right now, I am a student studying for a degree in bachelor's computer science under cyber security and system forensics. My birthday is on June 10 2002.";
+			?>
+		</p>
 		<button onclick="startCountdown()">My Birthday Countdown</button>
 		<p id="countdown"></p>
     </section>
