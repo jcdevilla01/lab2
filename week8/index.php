@@ -155,7 +155,9 @@
     <section>
         <h2>Fun Facts</h2>
         <ul>
-            <li> I have a total of 11 cats at home </li>
+            <li> I have a total of <?php $catnum = 11; 
+			print $catnum;
+			?> cats at home </li>
             <li>I've watched over 500 anime </li>
             <li>I love trying out new things </li>
         </ul>
