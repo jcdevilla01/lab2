@@ -158,7 +158,12 @@
             <li> I have a total of <?php $catnum = 11; 
 			print $catnum;
 			?> cats at home </li>
-            <li>I've watched over 500 anime </li>
+            <li>I've watched over <?php
+function getFiveHundred() {
+    return 500;
+}
+$result = getFiveHundred();
+echo $result; ?> anime </li>
             <li>I love trying out new things </li>
         </ul>
     </section>
