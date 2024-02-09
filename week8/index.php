@@ -234,8 +234,31 @@ function test_input($data) {
   return $data;
 }
 ?>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "myDB";
 
-<h2>PHP Form Validation Example</h2>
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO MyGuests (name, email, website, comment, gender)
+VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
+<h2>PHP Form Validation</h2>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name" value="<?php echo $name;?>">
