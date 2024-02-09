@@ -238,7 +238,7 @@ function test_input($data) {
 $servername = "localhost";
 $username = "webprogmi222_sf221";
 $password = "xE*Y2nleNVvZm[!!";
-$dbname = "myDB";
+$dbname = "webprogmi222_sf221";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
