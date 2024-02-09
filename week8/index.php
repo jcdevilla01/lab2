@@ -121,7 +121,7 @@
 				this.Age = Age;
 			}
     </script>
-	<
+	
 </head>
 
 <body>
@@ -138,7 +138,7 @@
 	<button onclick="CallMyName()">Click Me For Full Name</button>
     </header>
 	
-<
+
 
     <section>
         <h2><?php echo 'About Me'; ?></h2>
