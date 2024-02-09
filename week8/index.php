@@ -200,6 +200,18 @@
   <input type="submit" name="submit" value="Submit">  
 </form>
 <?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?>
+<?php
 $servername = "localhost";
 		$username = "webprogmi222_sf221";
 		$password = "xE*Y2nleNVvZm[!!";
@@ -279,18 +291,7 @@ function test_input($data) {
   return $data;
 }
 ?>
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?>
+
 	</section>
 	<script>
         function showMessage() {
