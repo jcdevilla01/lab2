@@ -78,7 +78,6 @@
 			display: inline-block;
 		}
 		
-}
     </style>
 	<script>
         function startCountdown() {
