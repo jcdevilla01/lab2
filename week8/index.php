@@ -77,7 +77,7 @@
 			font-size: 30px;
 			display: inline-block;
 		}
-		
+}		
     </style>
 	<script>
         function startCountdown() {
