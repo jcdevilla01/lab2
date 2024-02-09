@@ -6,7 +6,30 @@
 </style>
 </head>
 <body>  
+<?php
+$servername = "localhost";
+		$username = "webprogmi222_sf221";
+		$password = "xE*Y2nleNVvZm[!!";
+		$dbname = "webprogmi222_sf221";
 
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO MyGuests (name, email, website, comment, gender)
+VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
 	<?php
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
@@ -62,30 +85,6 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
-?>
-<?php
-$servername = "localhost";
-		$username = "webprogmi222_sf221";
-		$password = "xE*Y2nleNVvZm[!!";
-		$dbname = "webprogmi222_sf221";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "INSERT INTO MyGuests (name, email, website, comment, gender)
-VALUES ('$name', '$email', '$website', '$comment', '$gender')";
-
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
 ?>
 <h2>PHP Form Validation</h2>
 <p><span class="error">* required field</span></p>
